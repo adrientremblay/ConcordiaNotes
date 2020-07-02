@@ -1,0 +1,449 @@
+---
+title: ENGR301 Notes
+author: Adrien Tremblay
+output: pdf_document
+---
+
+# Chapter 1
+
+## What is a project?
+* In comparison a process is ongoing, day-to-day activities where organization engages in producing goods or services
+* Beginning and End -> limited life
+* Conducted to meet goals of cost, schedule, quality
+* Unique
+* Goals-Oriented -> One objective
+* Involve coordination of interrelated activities
+* Complex: require input of people from many different departments
+* One-Time: only exist as long as goal is not met
+* Specific goals or deliverables
+* Ultimate goal customer satisfaction?
+* Projects are the implementation of project-wide strategies
+* Violate the monotany of process-based company work
+* Uncertainty
+
+## Why are projects important?
+* Product life cycles are decreacing
+* Small launch windows
+* Products are more complicated
+* More compeditors because of globalization
+* Project managers must be skilled in resource management, project selection, budgeting, planning, scheduling, tracking project.
+* Project managments need to be skilled in behavioral managemnt: managing people
+
+## Project Life Cycles
+* **Conceptualization:** develop initial goals and technical specs.  Determening scope, resources, stakeholders.
+* **Planning:** detailed specs, schematics ,schedules and plans developed.  *Work Packages* broken down, individual assignments made, process for completion made.
+* **Execution:** the actual work.  Bulk of labour.
+* **Termination:** completed project handed to customer.  Project closed.
+* Execution is the peak of the bell curve :)
+* Stages are waypoints for project tea to reflect
+* Project life cycle plannign gives insight into how much resources need to be expended.
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni1.png)
+
+## Determinants of project success
+* **Time**: internal
+* **Budget**: internal
+* **Performace**L internal
+* **Client Acceptance**: external *NEW AGE HOLY SHIT*
+* Other model
+  + Project efficiency: meeting budget and schedule expectations
+  + Impact customer: meeting tech specs, client needs
+  + Business success: commercial success
+  + Preparing for the future: project opened new markets/product lines or helped develop a technology
+
+### Developing Project Management Maturity
+* **Project Maturity Models** allow organizations to benchmark the best practices of successful project management firms.
+* Old companies already have well set project management models, while younger companies are *less mature*.
+* **Benchmarking:** systematically manage process improvements of project delivery of an org over a period of time.
+* Steps:
+  + Analyze and critically evaluate current practices as they pertain to managing projects.
+  + Compare those practices to chief competitors or industry standard.
+  + Define systematic route for improving these practices.
+* Project maturity models are used to access an organizaition
+* Spider web diagram where each arm is an element or project managment
+* I got fucking bored
+
+### Project elements and text organization
+* Gantt charts
+*  
+
+complete this later
+
+# Chapter 2 - The Organizational Context
+* Project management is contectual to organizational structure
+
+## Projects and Organizational Strategy
+* **Strategic management:** formulating, implementing, evaluating cross-functional descisions to enable an organization to achieev objectives.
+  + *Vision and mission statements:* establish what org wishes to accomplish.  Push org members towards one direction.
+  + *Formulating, implementing, evaluating:* projects are key to strategy implementation.
+  + *Making cross functional descisions:* different functional groups need to work together
+  + *Achieving objectives:* projects achieve objectives.
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni2.png)
+* Provide context for project management
+
+## Stakeholder management
+* **Stakeholder analysis** is a tool for demonstrating conflicts that arise when initiating a project.  Identify and manage positive results from stakeholder impact.
+* **Project Stakeholders** are anyone who has an active stake in the project.  And can impact (positively or negatively) it's development.
+* The impact of company descisions on stakeholders.
+* Stakeholders can also affect projects by agitating faster development, working with the team, influecning top management
+
+## Identifying Project Stakeholders
+* **Internal**
+  + Top management
+  + Accounting
+  + Other functional management
+  + Project team members
+* **External**
+  + Clients
+  + Competitors
+  + Suppliers
+  + Envirnomental, political, consumer, and other intervenor groups
+* *Clients* want to receive project from team asap.  Don't want money to sit.  Want to get what they pay for.  Projects often start before customer needs fully define, so they often seek a say at the table.  Info needs to be presented to these stakeholders.
+* *Competitors* Negatively affected by success of project.  Companies should spy on competetors.  learn from competitor's mistakes.
+* *Suppliers* provides raw materials or resources to project team. Supply chain management needs to be fleek.  Make sure supplied has correct input info, project manager must monitor deliveries. 
+* *Intervenor Group:* A group external to project but with power t distrupt or halt project.  Ex: envirnomental groups.  Can also have positive affects on proj.  Have legal system at their disposal .
+* *Top Management* have a lot of power.  Want projects to be timely, cost-efficient, and minimally disruptive to rest of functional organization.
+* *Accounting* are there to ensure organization cost efficiency.  Monitor budgets.  Sometimes seen as enemy by PMs.
+* *Functional Managers* line positions in traditional chain of command.  (A function is like accounting, or engineering).  Confusion between following func managers and proj managers.  Proj managers need to respect func managers as stakeholders, they often to employee reports.
+* *Project team members*.  Some volunteer.  Team members must have comitment and productivity of team for project success.
+
+## Managing Stakeholders
+1. **Assess the envirnoment**
+  + How big is the project?
+  + Assess needs of consumer
+2. **Identify the goals of the principal actors**
+  + Paint accurate picture of stakeholder concerns
+3. **Assess your own capabilities**
+  + If you can't do it, find someone who can
+4. **Define the problem**
+  + with as much detail as possible
+  + in terms of your and stakeholder interests (find the win-win scenario)
+5. **Develop solutions**
+  + Project manager and teams work towards finding a solution that will satisfy the stakeholder groups.
+  + Homework must be done before
+6. **Test and refine the solutions**
+  + Interative proccess
+  + Information is not perfect
+  + Assumptions need to be corrected
+
+**This cycle repeasts!!!**
+
+## Organizational Structure
+* Three key elements
+1. **Formal Reporting Relationships:** 
++ number of levels in heirarchy
++ span of control of managers and supervisors(how many direct subordinates they have)
+2. Division of employees into *departments* and then departments into the *organization*
+  + Departmnts may be grouped by function, product, geohraphy, and project
+  3.Design of systems to ensure effective communication, coordination, and integration across depts 
+  * There are two organizational structures at play:
+  + Structure of organization developing project including, project team, client, top magement, func depts, stakeholders.
+  + Internal structure of project team.  Team members, roles, and relation to project manager.
+
+## Types Organizational Structure
+* Structure defined by what has happened to company
+  + competitors
+  + customers
+  + government
+  + legal bodies
+  + trends
+
+### Functional Organizations
+* most common
+* ground functional groups.  Ex: marketing, finance, research, accounting, etc...
+* employees often working on multple projects, support multiple product lines
+* Positives are efficiency on allocation, accountability, lack of duplication of work, easy to find expertise
+
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni3.png)
+
+* Negatives include:
++ employees neglect other departements *functional siloing*.  Unable to consider alternative views, collaborate with other groups, or work cross-functionally
++ Poor responsiveness to external oppurtunities and threats
++ too much up down communication and not enough sideways -> slow desiscion making
++ low innovation because low inter-dept communicationas 
++ Functional dept members still ultimately owe alleigance to funtional dept
++ one dept may be the brainchild while others reglect work
++ Customers are not focus.
+* Good firms that have low levels of external uncertainty
+* Worst for projects
+
+### Project Organization
+* Goal is to run projects.  Ex: construction companies, manufacturers, pharma firms, etc...  
+* Each project team is a self contained business with dedicated team
+* Advantages:
+  + Project manager is king: not a subordinate to anyone.
+  + No silo-ing.
+  + People focus solely on the project.
+  + High agility in response to envirnoment
+* Disadvantages:
+  + Setting up and maintaining teams expensive
+  + Innefficient use of reosurces.  Staffing may fluctuate.  Manpower requirements can fluxuate leaving some employees just playing with their dicks.
+  + Lack of pooled knowledge base.  Expertise doesnt stay, many people are contracted.
+  + Project team members can wonder what will happen to them after project completion.
+  + No company loyalty?  "Imma leave the company"
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni4.png)
+
+### Matrix Organization
+* Balance between Functional and Project organizations
+* Dual heirarchy with balance of power between project and functional departments.  
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni5.png)
+
+* Vice President of Projects works with functional dept heads to assign resources.
+* **Weak Matrix:** functional departments maintain control over resource management of their dept.  Proj manager manages these functional leaders.
+* **Strong Matrix** project manager is in control of project resources, has key desscision making authority.  Functional managers reduced to consultants.
+* Matrix organizations are useful when:
+  + There is pressure to share scarce reosurces across projects
+  + There is need to emphasize different forms of output
+  + Envirnoment of organization is complex
+* Advantages:
+  + responsive to external opportunities, and internal efficienies
+  + Parrallel authority
+  + Close coordination between departements
+  + Resources can be moved, no hoarding
+* Disadvantages:
+  + Dual authority creates confusion
+  + Project managers need to hold meeting with all functional groups playing politics.
+
+## Heavyweight Project Organizations
+* Create full on project organizations
+* Functional depts are either fully subordinated to projects or project teams are accorded indepenedent reosurce base
+
+## Project Management Offices
+* Centralized unit within organization that oversees or improves management of projects.
+* Help project managers with scheduling, resource allocation, monitoring, controlling projects.
+* Central repository of knowledge learned
+* Center for project management improvement
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni6.png)
+
+* Can be placed in many locations 3: corporation, 2: specific business unit, 1: project.
+* PMOs can be said to operate in one of three models:
+* **Weather Station**
+  + Keep eye on status or projects in term of schedule and budget and risk status.
+* **Control Tower**
+  + Help improve people's project management skills
+  + Identify whats working and whats not and how to resolve problems
+  + Establishes standards for managing projects
+  + consults how to follow standards.
+  + Enforce standards
+  + Improve standards
+* **Resource Pool**
+  + maintain cadre of trained project professionals
+* Critisism:
+  + Too much beaurocracy
+  + Concentrate talent too much
+  + Bottleneck?
+
+## Organizational Culture
+* Collective group learnings
+* Business people must be culture savvy
+* **Unwritten** rules
+* **Rules of behavior**
+* **Held by some subset of the organization**
+* **Taught to all new members** either through indoctrination or formal training.
+
+## How do Cultures Form?
+* **Technology**: Conversion process from inputs to outputs ex: project dev process.
+* **Environment**
+* **Geographic Location**
+* **Reward System**
+* **Rules and Procedures**
+* **Key Organizational Members**
+* **Critical Incidents** demonstrate what it takes to succeed.  Stories.
+
+## Org Culture [implications on]Project Management
+* **Department Interaction** - inter-dept collaboration is good
+* **Employee Commitment** - should promote commitment and self-sacrifice.
+* **Project Planning** - employees must be honest when project planning to get accurate time estimates.
+* **Performance Evaluation** - good rewards system: take risks, not staying safe.
+* *Escalation of commitment*: companies support project way past kill date.
+
+# Chapter 3 - Canadian Forms of Business Organizations 
+* Legal organization or structure a firm can adopt.
+* Affects taxing, liability, laws that affect operation, ability to raise capital.
+* Sole Proprietorship, Partnership, Corporation, Cooperative
+
+## Sole Proprietorship
+* One individual carrying on business under his/her name.
+* Assets of organization belong to individual.
+* Profits belong to individual.
+* No separation between individuals asset's and business' assets.
+* Advantages:
+  + Easy and inexpensive to form.
+  + Low regulatory burden.
+  + Owner has direct control over decision making.
+  + Tax advantages when business not doing well
+  + All profits go directly to proprietor (if no shareholders, board members)
+* Disadvantages:
+  + Unlimited liability.
+  + Business income taxed as personal income -> bad if profits high.
+  + Lack of continuity if owner takes break or fucking dies.
+  + Hard to raise funds because low collateral.
+
+## Partnership
+* Two or more individuals form a business together.
+* Like a sole proprietorship but everything is split.
+* *Limited Liability Partnership*: partner only pays as at a maximum the total money they put in.
+* Advantages:
+  - Easy to start.
+  - Start-up cost can be shared.
+  - Tax advantage if profits low.
+* Disadvantages: 
+  - No distinction between partners and the business.
+  - Hard to find good partners.
+  - Conflict between partners.
+  - Partners financially responsible for decisions/agreements made my others.
+
+## Corporation
+* Most complicated
+* Federal or provincial level.
+* Liability of a corparation lies with it's assets
+* Shares and shareholders
+* Advantages:
+  + Personal assets of shareholders and executives protected.
+  + Ownership easily transferrable.
+  + Continuous existance past exec death.
+  + Can raise capital through sale of stocks.
+  + Tax advantage with high income.
+* Disadvantages:
+  + Closed regularlly.
+  + Expensive to start.
+  + A lot of paperwork and recordkeeping.
+  + Conflict with shareholders and directors.
+  + Director must be resident of province corp is registered to.
+
+## Cooperative
+* Owned by association
+* Work democratically.
+* Shares but each person only has one vote.
+* Advantages:
+  + Democracy
+  + Limited liability.
+  + Profits distributed proportional to business done by each member.
+* Disadvantages:
+  + Conflict in management.
+  + Longer descision making process.
+  + Participation of members needed.
+  + Reccord keeping.
+  + Not much motiviation to invest more into a capital because profits distributed by work done.
+
+# Project Delivery Systems
+* Framework between owner and other project participants
+* Selected based on risk management primarily.
+* Allows owner to transfer some risk to certain participants.
+
+## Design-Bid-Build Project Delivery System (Traditional)
+* Owner enters into two seprate contracts one with a seigner and one with a general contractror.  One to design/engineer the project and one to actually implement it.
+* Contractor can use subcontractors.
+* While there is no contract between designer and contractor there is a communication relationship.
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni7.png)
+
+## Turnkey Project Delivery System
+* Suitable for large industrial projects that require specialized knowledge and skills. 
+* Delivered to client ready to use.
+* Owner transfers risks to single entity (design and construction).
+* **Design Build Turnkey Project** has it's own workforce for construction but may hire subcontracts.  **Design Manage Turnkey Project** has no workforce and must hire subcontactors.
+
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni8.png)
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni9.png)
+
+## Owner-Builder Project Delivery System
+* Owner responsible for both design and construction.
+* Used by large organizations that have both departments.
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni10.png)
+
+## Professional Construction Management Project Delivery System
+* Want input from construction team during design phase.
+* Used for very large projects.
+* Under **Construction Management - Construction Manager** owner enters separate contracts with designer, construction manager, and contractors. 
+* Construction manager acts as owner's agent during design and construction.  Acts as an **advisor**.
+* Motivation to save money.
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni11.png)
+
+* Under **Construction Management - At Risk** owner enters two contracts one with designer and one with a general contractor (which acts as a construction manager).
+* Different from design-bid-build PDS because construction manager enters during the design phase.
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni12.png)
+
+# Chapter 6 - Project Scheduling
+
+## Project Scheduling
+* Turn goals into a methodology.
+* **Project Planning:** "the identification of the project objectives and the ordered activity necessary to complete the project including the identification of resource types and quantities required to carry out each activity or taks"
+* Tasks are *ordered activities* meaning they come before or after others.
+* *Subsequent/Successor Activity* is one that comes after another.
+* **Network Diagram:** the schematic display of the project's sequential activities and the logical relationships between them.
+* Increase communication.
+* Doing something wrong early could have big consequences later on.
+* Distinguishes critical activities from less critical ones.
+  + Wiggle rooms are also identified.
+* Shows expected project completion date.
+
+## Scheduling Terminology
+* *Scope:* content and products of a project(or component of one).
+  + Activities performed.
+  + Resources Consumed.
+  + End Products.
+* *Work Breakdown Structure (WBS):* family tree of activities.
+* *Work Package:* an activity.  Lowest level of WBS.
+  + Has a expected time and cost.
+* *Project Network Diagram (PND):* Any schematic display of the logical relationship of project activities.  umm?
+* *Event:* a point when an activity is either stared or completed.
+* *Node:* defining point in a network where activities join.
+* *Early Start(ES)* and *Late Start(LS)* are earliest and latest possible date to start work on an activity.
+* *Forward Pass* and *Backward Pass* calculates the earliest start dates and latest stat dates of each activity respectively.
+* *Merge Activity:* activity with two or more predessors.  Can be located during forward pass
+* *Burst activity:* activity with two or moer immediate succesor activites.  Can be located during backwards passes.
+* *Float:* **LF - EF**.  The amount of time an activity can be delayed without delaying entire project.
+* *Critical Path:* path through project duration with longest duration
+* There are two different methods for constructing activity networks.  **Activity on Arrow AOA** where arrows represent activities and nodes are events.  And **Activity on Node AON** has nodes represent activities and arrows demonstrat ethe logical sequencing from node to node.  *real gangstas use AON though :)))*
+
+## Developing a Network
+* *Crashing Descisions:* speed things up.
+* Note an activity cannot start before any of it's predecessor activites.
+
+![](/home/adrientremblay/Documents/school/summer\ 2020/ENGR\ 301/notes/ni13.png)
+
+* There is no standard Lmao!!!
+* *Serial Activites* follow one to the next/
+
+## Duration Estimation
+* Always somewhat uncertain and based on normal working methods during normal business.
+* Can be estimated by:
+  + **Experience**: use past examples as a baseline.
+  + **Expert Opinion:** use cation...
+  + **Mathematical Derivation:** analysis of worst, average, and best case scenarios.
+* For Mathematical Deriviation we estimate the three scenario times.  Then pick a *Beta* (asymettrical) or *Alpha* (symetrical) distribution.
+* We can derive the formula TE = (a+4m+b)/6. *TE would be the Beta value*
+  + a = most optimistic time for activity.
+  + m = most likely time for activity.
+  + b = most pessimistic time to complete the activity.
+* Project estimation uses a confidence interval of 99%.
+
+
+## Constructing the Critical Path
+1. Do forward pass to get early start and finish times.
+2. Do backward pass to get late start and finish times.
+3. determine activity floats and project critical path.
+  + Floats are LF-EF.
+  + Path with activities with float all of 0 is the critical path.
+
+... Finish later ...
+
+# Cost Estimation (Lecture)
+
+## Rough (Order Of Magnitude) Estimate
+* Used in initial phases.
+* Little detail and little accuracy.
+* Accuracy from -30% to +60%
+
+## Budget Estimate
+
+## Detailed Estimate
