@@ -1,5 +1,0 @@
-- Dynamic Programming
-- Data Structures
-- Algorithms
-- Graph Theory
-- Theoretical Comp Sci
