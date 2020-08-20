@@ -27,3 +27,39 @@ List | Dynamic Array, Linked List
 Queue | Linked List based queue, Array based queue, stack based queue
 Map | tree Map, Hash Map
 Vehicle | Golf Cart, Bike, Smart Car
+
+# Dynamic and Static arrays
+
+## Static Array
+
+A **Static Array** is a fixed length container containing n elements **indexable** from range [0, n-1]
+
+* Contiguous in memory (next to each other).
+* Fixed size (cannot grow or shrink in size).
+
+## Used in
+
+* Storing sequential data.
+* Temporarily storing data.
+* Buffers.
+* In lookup tables.
+* A lot of other places>
+
+## Complexity
+
+Action | Static Array | Dynamic Array
+----- | ----- | -----
+Access | O(1) | O(1)
+Search | O(n) | O(n) 
+Insertion | N/A | O(n)
+Appending | N/A | O(1)
+Deletion | N/A | O(n)
+
+## Dynamic Arrays
+
+* Can grow or shink in size
+* AKA Arraylists
+* Typically implemented using a static array.
+  + Create static array with non-zero size.
+  + Add elements, keeping track of size.
+  + If size goes over limit, create a new array of double the size and copy all elements over.
