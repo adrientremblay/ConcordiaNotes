@@ -1,0 +1,29 @@
+---
+title: Data Stuctures
+author: Adrien Tremblay
+output: pdf_document
+---
+
+# Data Structure(DS)
+
+A **data structure** is a way of organizing data so that it can be used effectively. 
+
+* Essential ingredient to creating.
+* Help manage and organize data.
+* Make code cleaner and easier to understand.
+* Good coders now what data structure fits every given scenario.
+
+# Abstract Data Type (ADT)
+
+An **Abstract Data Type** is an abstraction of a data structure which provides only the interface to which a data structure must adhere to.
+
+* Language/implementation non-specific.
+
+## Examples:
+
+Abstraction (ADT) | Implementation (DS)
+----- | -----
+List | Dynamic Array, Linked List
+Queue | Linked List based queue, Array based queue, stack based queue
+Map | tree Map, Hash Map
+Vehicle | Golf Cart, Bike, Smart Car

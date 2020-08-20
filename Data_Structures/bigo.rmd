@@ -1,0 +1,10 @@
+---
+title: Big O
+author: Adrien Tremblay
+output: pdf_document
+---
+
+# Big-O notation
+
+Big-O gives an upper bound on the complexity in the **worst** case to quantify performance as input size becomes arbitrarily large.
+
