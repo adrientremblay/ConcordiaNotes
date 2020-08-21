@@ -1,8 +1,9 @@
 package array;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
-public class DynamicArray<E> {
+public class DynamicArray<E> implements Iterable<E> {
     private int capacity;
     private int length;
     private E[] arr;
@@ -23,7 +24,7 @@ public class DynamicArray<E> {
     }
 
     public DynamicArray(int capacity){
-        if (capacity < 0) return;
+        if (capacity < 0) throw new IllegalArgumentException("Capacity cannot be below 0!");
 
         this.capacity=capacity;
         this.length=0;
@@ -36,7 +37,7 @@ public class DynamicArray<E> {
     }
 
     public void insert(int index, E value) {
-        if (index < 0) return;
+        if (index < 0) throw new IndexOutOfBoundsException();
 
         // index will resolve to being the end of the array
         if (index >= this.length) {
@@ -67,15 +68,27 @@ public class DynamicArray<E> {
         return -1;
     }
 
+    public boolean contains(E value) {
+        return search(value) != -1;
+    }
+
     public void delete(E value) {
         int deleteIndex = this.search(value);
-        if (deleteIndex == -1) return;
+        if (deleteIndex == -1) throw new IndexOutOfBoundsException();
 
         for (int i = deleteIndex ; i < this.length ; i++){
            arr[i] = arr[i+1];
         }
 
         this.length-=1;
+    }
+
+    public int size() {
+        return this.length;
+    }
+
+    public boolean isEmpty() {
+        return size() == 0;
     }
 
     @Override
@@ -85,5 +98,14 @@ public class DynamicArray<E> {
                 ", length=" + length +
                 ", arr=" + Arrays.toString(arr) +
                 '}';
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return new java.util.Iterator<E>() {
+            int index = 0;
+            public boolean hasNext() {return index < length;}
+            public E next() { return arr[index++];}
+        };
     }
 }
