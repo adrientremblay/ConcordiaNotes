@@ -63,3 +63,34 @@ Deletion | N/A | O(n)
   + Create static array with non-zero size.
   + Add elements, keeping track of size.
   + If size goes over limit, create a new array of double the size and copy all elements over.
+
+# Linked Lists
+
+A **Linked List** is a sequential list of nodes that hold data which point to other nodes.
+
+* The last node always points to null.
+* **Head**: first element
+* **Tail**: last element
+
+## Used in
+
+* Implementation of List, Queue, and Stack.
+* Creating circular lists.
+* Model real world things like trains.
+* In hashtables, graphs.
+
+## Signly Linked vs Doubly Linked
+
+* Singly only contains reference to the next node.
+* Doubly also contains reference to the previous node.
+
+## Complexity
+
+Action | Signly Linked | Doubly Linked
+----- | ----- | -----
+Search | O(n) | O(n) 
+Insert at head | O(1) | O(1)
+Insert at tail | O(1) | O(1)
+Remove at head | O(1) | O(1)
+Remove at tail | O(1) | O(1)
+Remove in middle | O(n) | O(n)
