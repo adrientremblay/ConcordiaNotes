@@ -21,5 +21,7 @@ public class Main {
         test.removeByValue(2);
         test.removeByValue(1);
         System.out.println(test);
+        test.removeAtTail();
+        System.out.println(test);
     }
 }

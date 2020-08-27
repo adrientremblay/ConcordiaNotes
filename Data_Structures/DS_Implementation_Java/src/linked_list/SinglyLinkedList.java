@@ -4,6 +4,9 @@ import javax.swing.text.html.HTMLDocument;
 import java.util.Iterator;
 
 public class SinglyLinkedList<E> {
+    private Node head;
+    private Node tail;
+    private int size;
 
     private class Node {
        private E data;
@@ -31,17 +34,16 @@ public class SinglyLinkedList<E> {
       }
     }
 
-    private Node head;
-    private Node tail;
-
     // Constructor
     public SinglyLinkedList() {
         this.head = null;
         this.tail = null;
+        this.size = 0;
     }
 
     // Public Methods
     public void insertAtHead(E value) {
+        this.size++;
         Node newNode = new Node(value);
 
         if (this.head == null) {
@@ -58,23 +60,36 @@ public class SinglyLinkedList<E> {
     public E removeAtHead() {
         if (this.head == null) return null;
 
+        this.size--;
+
         E data = this.head.data;
         this.head = this.head.next;
+        if (this.head == null) this.tail = null;
         return data;
     }
 
     public E removeAtTail() {
         if (this.tail == null) return null;
+        if (this.head == null) return null;
+
+        this.size--;
 
         Node trav = head;
         while(trav.next != tail) trav = trav.next;
         this.tail = trav;
-        Node temp = this.tail.next;
+        if (this.tail == null) {
+            this.head = null;
+            return null;
+        }
+
+        E data = this.tail.next.data;
         this.tail.next = null;
-        return temp.data;
+        return data;
     }
 
     public void insertAtTail(E value) {
+        this.size++;
+
         Node newNode = new Node(value);
 
         if (this.tail == null) {
@@ -112,9 +127,20 @@ public class SinglyLinkedList<E> {
 
          if (!found) return null;
 
+         if (trav == this.tail)
+             return removeAtTail();
+        if (trav == this.head)
+            return removeAtHead();
+
+        this.size--;
+
         Node tmp = trav.next;
         trav.next = trav.next.next;
         return tmp.data;
+    }
+
+    public int size() {
+        return this.size;
     }
 
     public String toString() {
@@ -128,6 +154,8 @@ public class SinglyLinkedList<E> {
         }
 
        sb.append("[" + tmp.data + "] -> null");
+
+       sb.append("\nsize: " + this.size);
 
        return sb.toString();
     }
