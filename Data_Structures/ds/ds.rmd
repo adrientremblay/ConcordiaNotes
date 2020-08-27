@@ -94,3 +94,28 @@ Insert at tail | O(1) | O(1)
 Remove at head | O(1) | O(1)
 Remove at tail | O(1) | O(1)
 Remove in middle | O(n) | O(n)
+
+# Stack
+
+A stack is a one-ended linear data structure which models a real world stack by having two primary operations: *push*, *pop*.
+
+* There is a pointed to the top element called *Top*.
+* *LIFO*: Last in first out.
+
+## Uses
+
+* Undo mechanisms for text editors.
+* Used to match brackets.
+* Model piles of stuff.
+* Function stack.
+* DFS on a graph.
+
+## Complexity
+
+Action | Complexity  
+----- | ----- 
+Pushing | O(1)
+Popping | O(1)
+Peeking | O(1)
+Searching | O(n)
+Size | O(1g
