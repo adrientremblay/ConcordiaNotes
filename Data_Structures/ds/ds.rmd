@@ -119,3 +119,30 @@ Popping | O(1)
 Peeking | O(1)
 Searching | O(n)
 Size | O(1)
+
+# Queue
+
+A linear data structure that is *FILA*: First in - Last out.
+
+* Models a real world queue.
+* Two primary operations: *Enqueue and Dequeue*
+  + Insert through back, remove from front
+
+## Uses
+
+* Modelling real world queues.
+* Keep track of x most recent elements.
+* Web server management.
+* BFS graph traversal.
+
+## Complexity
+
+Action | Complexity  
+----- | ----- 
+Enqueue | O(1)
+Dequeue | O(1)
+Peeking | O(1)
+Contains | O(n)
+Removal | O(n)
+isEmpty | O(1)
+
