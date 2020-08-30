@@ -75,7 +75,7 @@ public class SinglyLinkedList<E> {
         this.size--;
 
         Node trav = head;
-        while(trav.next != tail) trav = trav.next;
+        while(trav != null && trav.next != tail) trav = trav.next;
         this.tail = trav;
         if (this.tail == null) {
             this.head = null;
@@ -147,13 +147,13 @@ public class SinglyLinkedList<E> {
        StringBuilder sb = new StringBuilder();
        Node tmp = head;
 
-       while (tmp.hasNext()) {
+       while (tmp != null && tmp.hasNext()) {
           sb.append("[" + tmp.data + "] -> " );
 
           tmp=tmp.next;
         }
-
-       sb.append("[" + tmp.data + "] -> null");
+       if (tmp != null)
+        sb.append("[" + tmp.data + "] -> null");
 
        sb.append("\nsize: " + this.size);
 

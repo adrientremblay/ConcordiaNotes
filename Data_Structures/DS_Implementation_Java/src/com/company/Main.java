@@ -18,8 +18,8 @@ public class Main {
         test.removeAtTail();
         test.removeAtTail();
         test.removeAtHead();
-        test.removeByValue(2);
-        test.removeByValue(1);
+        test.removeAtTail();
+        test.removeAtTail();
         System.out.println(test);
         test.removeAtTail();
         System.out.println(test);
