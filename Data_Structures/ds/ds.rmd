@@ -118,4 +118,4 @@ Pushing | O(1)
 Popping | O(1)
 Peeking | O(1)
 Searching | O(n)
-Size | O(1g
+Size | O(1)

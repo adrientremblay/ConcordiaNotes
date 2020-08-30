@@ -102,11 +102,11 @@ public class SinglyLinkedList<E> {
         this.tail = newNode;
     }
 
-    public Node search(E value) {
+    public E search(E value) {
        Node trav = head;
        while (trav != null){
            if (trav.data.equals(value))
-               return trav;
+               return trav.data;
 
            trav = trav.next;
        }
@@ -158,6 +158,14 @@ public class SinglyLinkedList<E> {
        sb.append("\nsize: " + this.size);
 
        return sb.toString();
+    }
+
+    public E getHead() {
+        return this.head.data;
+    }
+
+    public E getTail() {
+        return this.tail.data;
     }
 
     //@Override
