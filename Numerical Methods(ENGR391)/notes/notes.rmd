@@ -1,0 +1,67 @@
+---
+title: Numerical Methods Notes
+author: Adrien Tremblay
+output: pdf_document
+---
+
+# Why numerical methods?
+
+* Give numerical solution to a mathematical problem
+* When problem is too complex (no closed form solution)
+  + Solution doesnt exist
+  + Too dumb to figure out solution
+* Numerical solutions only produce *approximations* of the actual solution
+  + We should be able to determine how good such approximations are
+  + With an upper boundary
+
+# What are numerical methods?
+
+1. Algorithms
+  + Precise set of rules(instructions) to follow
+  + Generate approximation of mathematical problem
+2. Method to estimate error
+  + Without this approximation is useless
+  + Will differ depending on type of mathematical model
+
+# Algorithms
+
+* Most are iterative
+  + An initial guess that is gruadually improved
+  + It us up to you to find the initial guess
+  + And up to you to decide when to stop the iteration
+* Can have quality control step (Check how good a job you did)
+  + This step is to decide when to stop the iteration
+  + Used to identify the difference in precision between approximation and real answer.
+  + We typically have a target *tolerance* or *precision*
+
+# How do we decide target precision?
+
+* Will depend on specific problem and why you are solving it
+* Usually given lmao
+
+# Error
+
+* Difference between actual mathematical solution r and the numerical approximation $$x_{r}$$
+* Can be measured as an *abosulute error* or *relative error*
+  + Usually we use relative error (%).
+
+## True Error vs Estimated Error
++ The True Error is the actual difference between solution and estimate.  Which is never really known unless you know the real solution.
++ The Estimated Error is a conservative estiamtion of the true error.
+
+Estimated absolute error
+
+$$ E_{a} \geq |x_{r}-r| $$
+
+Estimated relative error
+
+$$ e_{a} \geq \frac{|x_{r}-r|}{r} $$
+
+## Source of errors
+
+* Error in modelling
+  + Model is not 100% accurate
+  + Bugs
+  + Errors in inputs
+  + *Round off errors*
+  + *Truncation errors*

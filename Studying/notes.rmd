@@ -1,0 +1,63 @@
+
+
+processing file: notes.rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
+  ordinary text without R code
+
+
+output file: notes.knit.md
+
+/usr/bin/pandoc +RTS -K512m -RTS notes.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output notes.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /home/adrientremblay/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/adrientremblay/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua --variable 'geometry:margin=1in' 
+
+Output created: notes.pdf
+
+# Mantras
+
+* Repetition is the mother of learning.
+* Study in chunks
+* Have a dedicated study space
+* Quality over quantity
+* Understand before memorizing
+
+# Study Zone
+
+* Disable all notifications
+  + Distractions will tank your efficiency
+* Set a goal for each study session
+* Be aware of focus dips
+
+# Daily Schedule
+
+* Will be different for different people
+
+# Passive vs Active memory
+
+* Active recall
+* VS Pasively re going over shit
+
+This could be done using spaced repetition software.
+
+# Facts vs Concepts
+
+* Concepts stay with us forver.
+  + Put them in your own words.
+* Facts are forgotten.
+  + Use mneumonics
+  + Acronyms
+  + Coined sayings
+  + Image assosiations
+
+# Studying from a textbook
+
+## Steps when reading a chapter
+
+1. Flip through each page.
+2. Read end of chapter quiz(if it exists).
+3. Read bold print.
+4. First and last sentence of every paragraph.
+5. Then Read
+
+# Studying from power-points
+
+1. Read through it first.
+2. Then watch lecture.

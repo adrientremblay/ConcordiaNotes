@@ -1,0 +1,6 @@
+---
+title: PPL COMP 348 Notes
+author: Adrien Tremblay
+output: pdf_document
+---
+

@@ -1,0 +1,17 @@
+---
+title: SOEN343 Notes
+author: Adrien Tremblay
+output: pdf_document
+---
+
+# Information
+
+* Live sessions only before quizzes and deliveries.
+  + Rest of course through pre-recorded lecture.
+* Tutorials present a problem and solution.
+  + Then the next week you must solve a similar problem for grades.
+* All live sessions will be recorded in the Yuja platform.
+
+# Project Topic
+
+Smart Home system simulator.

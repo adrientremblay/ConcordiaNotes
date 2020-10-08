@@ -146,3 +146,31 @@ Contains | O(n)
 Removal | O(n)
 isEmpty | O(1)
 
+# Priority Queues
+
+A *Priority Queue* is an ADT similar to a queue but each item has a priority.  This priority determines the order in which elements are removed from the queue.  Note: thusly PQs only support comparable data.
+
+## What is a heap?
+A heap is a DS that satisfies the heap invariant.  If A is a parent node of B then A is orderded with respect to B for all nodes A,B in the heap.
+
+* There are two types:
+  + *min heaps* where the root is the smallest
+  + *max heaps* where the root is the biggest
+
+* Heaps form the canonical underlying DS of a PQ.
+
+## Where are PQs used
+
+* Dijkstra's shortest path algorithm
+* Anytime you need to fetch the next best or next worst element
+* BFS algos
+* Minimum Spanning Tree (MST) algos
+
+# Complexity
+
+Action | Complexity  
+----- | ----- 
+Binary Heap Construction | O(n)
+Polling | O(log(n))
+Peeking | O(1)
+Adding | O(log(n))
