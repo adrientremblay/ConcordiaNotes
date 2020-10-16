@@ -24,7 +24,7 @@
 (print (car '(a s d f)))
 (print (car '((a s) d f)))
 
-(print 'cdr) ; returns last element of list
+(print 'cdr) ; returns tail of list (everything not the head)
 (print (cdr '(a s d f)))
 (print (cdr '((a s) d f)))
 (print (car(cdr '(1 (3 5) (7 11)))))
@@ -55,7 +55,7 @@
 
 (print 'Binding)
 (print (let ((x 2) (y 3))
- (+ x y)))
+  (+ x y)))
 (print (let ((x 1))
             (let ((x (+ x 1)))
                  (+ x x))))
@@ -122,7 +122,7 @@
   (if (null lst) (list e) 
     (cons (car lst) (consr (cdr lst) e))))
 (print (consr `(a b c d) `e))
-(defun product (list1 list2)
+(defun product (list1 list2) ; also uses recursion
   (if (or (null list1) (null list2))
     nil
   (let ((x (* (car list1) (car list2))))
