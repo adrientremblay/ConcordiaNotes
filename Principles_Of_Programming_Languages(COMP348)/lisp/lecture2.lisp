@@ -151,3 +151,12 @@
   (t (cons (car lst) (remove-all-occurences item (cdr lst))))))
 (print (remove-all-occurences 'v '(a b c v d e v v v)))
 (print (remove-all-occurences 'v '(a b c  d e)))
+
+; merge function (merge sort)
+(defun merge2 (lst1 lst2)
+  (cond ((null lst1) lst2)
+  ((null lst2) lst1)
+  ((= (car lst1) (car lst2)) (merge2 (cdr lst1) lst2))
+  ((< (car lst1) (car lst2)) (cons (car lst1) (merge2 (cdr lst1) lst2)))
+  (t (cons (car lst2) (merge2 lst1 (cdr lst2))))))
+(print (merge2 '(3 4 6 8) '(3 4 5 6)))
