@@ -135,3 +135,10 @@
   ((null lst2) lst1)
   (t (cons (car lst1) (cons (car lst2) (interleave (cdr lst1) (cdr lst2)))))))
 (print (interleave '(a b c) '(d e f g h)))
+
+; remove-first-occurence function
+(defun remove-first-occurence (item lst)
+  (if (eql (car lst) item) 
+  (cdr lst)
+  (cons (car lst) (remove-first-occurence item (cdr lst)))))
+(print (remove-first-occurence 'v '(a b c v d e v v v)))
