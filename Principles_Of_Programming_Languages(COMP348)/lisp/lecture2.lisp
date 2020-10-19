@@ -138,7 +138,8 @@
 
 ; remove-first-occurence function
 (defun remove-first-occurence (item lst)
-  (if (eql (car lst) item) 
-  (cdr lst)
-  (cons (car lst) (remove-first-occurence item (cdr lst)))))
+  (cond ((eql (car lst) item) (cdr lst))
+  ((null lst) nil)
+  (t (cons (car lst) (remove-first-occurence item (cdr lst))))))
 (print (remove-first-occurence 'v '(a b c v d e v v v)))
+(print (remove-first-occurence 'v '(a b c  d e)))
