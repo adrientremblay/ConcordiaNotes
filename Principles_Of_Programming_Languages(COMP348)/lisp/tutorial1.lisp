@@ -41,6 +41,6 @@
 
 (print '(excercise 16))
 (defun fibonacci (n) (if (<= n 1) 
-  1 
+  n 
   (+ (fibonacci (- n 1)) (fibonacci (- n 2)))))
 (print (fibonacci 6))

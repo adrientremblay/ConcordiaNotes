@@ -160,3 +160,12 @@
   ((< (car lst1) (car lst2)) (cons (car lst1) (merge2 (cdr lst1) lst2)))
   (t (cons (car lst2) (merge2 lst1 (cdr lst2))))))
 (print (merge2 '(3 4 6 8) '(3 4 5 6)))
+
+; max function
+(defun max2 (lst)
+  (cond ((null (car lst)) nil)
+  ((null (cdr lst)) (car lst))
+  (t (let ((a (car lst)) 
+    (b (max2 (cdr lst))))
+    (if (> a b) a b)))))
+(print (max2 '(1 5 7 4 8 20 4 6 4)))
