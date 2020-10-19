@@ -143,3 +143,11 @@
   (t (cons (car lst) (remove-first-occurence item (cdr lst))))))
 (print (remove-first-occurence 'v '(a b c v d e v v v)))
 (print (remove-first-occurence 'v '(a b c  d e)))
+
+; remove-all-occurences function
+(defun remove-all-occurences (item lst)
+  (cond ((eql (car lst) item) (remove-all-occurences item (cdr lst)))
+  ((null lst) nil)
+  (t (cons (car lst) (remove-all-occurences item (cdr lst))))))
+(print (remove-all-occurences 'v '(a b c v d e v v v)))
+(print (remove-all-occurences 'v '(a b c  d e)))
