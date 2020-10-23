@@ -103,3 +103,22 @@
         ((member (car set) (cdr set)) (bag2set (cdr set)))
         (t (cons (car set) (bag2set (cdr set))))))
 (print (bag2set '(a b b c d e f c e)))
+
+; tuple
+; unlike sets and bags, order matters
+; unlike a set, reptitions are allowed
+; (a, b, b, c) != (c, a, b, b)
+; (a, b,, c) != (c, a, b, b)
+
+; trees
+; <atom, <l - list>,<r - list>>
+'(40                   ; root
+    (30                ; root of left subtre
+        (25 () ())
+        (35 () ())
+    )
+    (60                ; root of right subtree
+        (50 () ())
+        ()
+    )
+)
