@@ -139,3 +139,15 @@
         )
     )
 ))
+
+; sorting
+
+; bubble sort
+(defun bubble (lst)
+    (cond 
+        ((or (null lst) (null (cdr lst))) lst)
+        ((< (car lst) (car (cdr lst)))
+            (cons (car lst) (bubble (cdr lst))))
+        (t 
+            (cons (car (cdr lst)) (bubble (cons (car lst) (cdr (cdr lst))))))))
+(print (bubble '(3 2 1) ))
