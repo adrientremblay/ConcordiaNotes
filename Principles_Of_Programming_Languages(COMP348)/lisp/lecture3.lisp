@@ -150,4 +150,18 @@
             (cons (car lst) (bubble (cdr lst))))
         (t 
             (cons (car (cdr lst)) (bubble (cons (car lst) (cdr (cdr lst))))))))
-(print (bubble '(3 2 1) ))
+(print (bubble '(3 2 1)))
+(defun sortedp (lst)
+    (cond 
+        ((or (null lst) (null (cdr lst))) t)
+        ((< (car lst) (car (cdr lst))) (sortedp (cdr lst)))
+        (t nil)
+        ))
+(print (sortedp '(1 2 3)))
+(print (sortedp '(2 1 3)))
+(defun bubblesort (lst)
+    (if (null lst)
+        nil
+        (let ((blst (bubble lst)))
+            (cons (car blst) (bubblesort (cdr blst))))))
+(print (bubblesort '(3 2 1)))
