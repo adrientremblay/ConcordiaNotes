@@ -29,6 +29,16 @@
         ((null set2) set1)
         ((member (car set1) set2) (setunion2 (cdr set1) set2))
         (t (cons (car set1) (setunion2 (cdr set1) set2)))))
+; version using let
+(defun setunion3 (set1 set2)
+    (cond
+        ((null set1) set2)
+        ((null set2) set1)
+        (t (let ((nextunion (setunion3 (cdr set1) set2)))
+            (cond 
+                ((member (car set1) set2) nextunion)
+                (t (cons (car set1) nextunion)))))))
 (print (setunion '(a b c d) '(a d)))
 (print (setunion2 '(a b c d) '(a d)))
+(print (setunion3 '(a b c d) '(a d)))
 
