@@ -34,11 +34,20 @@
     (cond
         ((null set1) set2)
         ((null set2) set1)
-        (t (let ((nextunion (setunion3 (cdr set1) set2)))
+        (t (let ((nextunion (setunion3 (cdr set1) set2)) (cur (car set1)))
             (cond 
-                ((member (car set1) set2) nextunion)
-                (t (cons (car set1) nextunion)))))))
+                ((member cur set2) nextunion)
+                (t (cons cur nextunion)))))))
+; version that preserves order 
+(defun helper (set1 set2) 
+    (cond 
+        ((or (null set2) (null set1)) nil)
+        ((member (car set2) set1) (helper set1 (cdr set2)))
+        (t (cons (car set2) (helper set1 (cdr set2))))))
+(defun setunion4 (set1 set2)
+    (append set1 (helper set1 set2)))
 (print (setunion '(a b c d) '(a d)))
 (print (setunion2 '(a b c d) '(a d)))
 (print (setunion3 '(a b c d) '(a d)))
+(print (setunion4 '(a b c d) '(a d)))
 
