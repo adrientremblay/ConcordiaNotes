@@ -58,7 +58,8 @@
         (t (setintersect (cdr set1) set2))))
 ; function to find intersections with let 
 (defun setintersect2 (set1 set2)
-    (if (null set1) nil
+    (if (null set1) 
+        nil
         (let (
             (cur (car set1))
             (rst (setintersect2 (cdr set1) set2)))
@@ -67,3 +68,15 @@
             rst))))
 (print (setintersect '(a b c d) '(a d)))
 (print (setintersect2 '(a b c d) '(a d)))
+
+; function to find difference between sets
+; set1 - set2
+(defun diff (set1 set2)
+    (cond 
+        ((null set1) nil)
+        ((null set2) set1)
+        (t (let ((cur (car set1)) (rst (diff (cdr set1) set2)))
+            (cond 
+                ((member cur set2) rst)
+                (t (cons cur rst)))))))
+(print (diff '(a b c) '(a d e f)))
