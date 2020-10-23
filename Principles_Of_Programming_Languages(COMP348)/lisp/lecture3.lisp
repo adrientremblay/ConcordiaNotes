@@ -166,9 +166,9 @@
     (apply #'< lst))
 (print (sortedp2 '(1 2 3)))
 (print (sortedp2 '(2 1 3)))
-(defun bubblesort (lst)
-    (if (null lst)
-        nil
-        (let ((blst (bubble lst)))
-            (cons (car blst) (bubblesort (cdr blst))))))
+(defun bubblesort (lst) ; calling bubble until the list is sorted lmao
+    (cond
+        ((or (null lst) (null (cdr lst))) lst)
+        ((sortedp lst) lst)
+        (t (bubblesort (bubble lst)))))
 (print (bubblesort '(3 2 1)))
