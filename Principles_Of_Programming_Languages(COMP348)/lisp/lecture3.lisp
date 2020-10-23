@@ -84,5 +84,22 @@
 ; function to determine set symmetric difference
 ; ?
 (defun setsymetricdiff (set1 set2)
-    (diff (setunion set1 set2) (setintersect set1 set2)))
+    (setunion
+        (diff set1 set2)
+        (diff set2 set1)))
 (print (setsymetricdiff '(a b c) '(c e)))
+
+; Bags
+; like a set, order of elements unimportant
+; unlike a set, repetions are allowed
+; {a, b, b, c} = {c, a, b, b}
+; {a, b c} !+ {c, a, b, b}
+
+; function to convert bags to sets
+; essentially remove the repetitions
+(defun bag2set (set)
+    (cond  
+        ((null set) nil)
+        ((member (car set) (cdr set)) (bag2set (cdr set)))
+        (t (cons (car set) (bag2set (cdr set))))))
+(print (bag2set '(a b b c d e f c e)))
