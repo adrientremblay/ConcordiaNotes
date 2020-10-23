@@ -185,3 +185,13 @@
 (defun lsearch (lst elt)
     (mysearch lst elt 1))
 (print (lsearch '(4 6 1 5 8 9) 9))
+
+; linear search (non recursive)
+(defun lsearch2 (lst elt)
+    (let ((pos 1))
+        (loop
+            (when (null lst) (return nil))
+            (when (equal (car lst) elt) (return pos))
+            (setq lst (cdr lst))
+            (incf pos))))
+(print (lsearch2 '(4 6 1 5 8 9) 9))
