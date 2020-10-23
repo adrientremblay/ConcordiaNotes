@@ -14,3 +14,11 @@
         (if (member (car set1) set2)
             (issubsetp (cdr set1) set2)
             nil)))
+
+; function to find set unions
+; TODO do let on  last part
+(defun setunion (set1 set2)
+    (if (null set1) set2 
+        (if (null set1) set1 
+            (if (member (car set1) set2) (setunion (cdr set1) set2)
+                (append (car set1) (setunion (cdr set1) set2))))))
