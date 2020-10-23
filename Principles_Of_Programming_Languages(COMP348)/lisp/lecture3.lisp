@@ -21,4 +21,14 @@
     (if (null set1) set2 
         (if (null set1) set1 
             (if (member (car set1) set2) (setunion (cdr set1) set2)
-                (append (car set1) (setunion (cdr set1) set2))))))
+                (cons (car set1) (setunion (cdr set1) set2))))))
+; version from the slides
+(defun setunion2 (set1 set2)
+    (cond
+        ((null set1) set2)
+        ((null set2) set1)
+        ((member (car set1) set2) (setunion2 (cdr set1) set2))
+        (t (cons (car set1) (setunion2 (cdr set1) set2)))))
+(print (setunion '(a b c d) '(a d)))
+(print (setunion2 '(a b c d) '(a d)))
+
