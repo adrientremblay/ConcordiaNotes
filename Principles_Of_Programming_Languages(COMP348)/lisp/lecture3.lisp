@@ -143,6 +143,7 @@
 ; sorting
 
 ; bubble sort
+; bubble function
 (defun bubble (lst)
     (cond 
         ((or (null lst) (null (cdr lst))) lst)
@@ -151,6 +152,7 @@
         (t 
             (cons (car (cdr lst)) (bubble (cons (car lst) (cdr (cdr lst))))))))
 (print (bubble '(3 2 1)))
+; is sorted function
 (defun sortedp (lst)
     (cond 
         ((or (null lst) (null (cdr lst))) t)
@@ -159,6 +161,11 @@
         ))
 (print (sortedp '(1 2 3)))
 (print (sortedp '(2 1 3)))
+; is sorted function using higher order func
+(defun sortedp2 (lst)
+    (apply #'< lst))
+(print (sortedp2 '(1 2 3)))
+(print (sortedp2 '(2 1 3)))
 (defun bubblesort (lst)
     (if (null lst)
         nil

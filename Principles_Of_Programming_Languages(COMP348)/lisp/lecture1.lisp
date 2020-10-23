@@ -75,7 +75,7 @@
   (equal list (reverse list)))
 (print (ispalindrome '(1 2 3 3 2 1)))
 
-(print 'Heigher_order_functions)
+(print 'Higher_order_functions)
 (print (sort (list 5 0 7 3 9 1 4 13 23) #'>)) ; '#' used to denote a function
 (print (mapcar #'* '(2 3) '(10 10))) ;applies operation to each pair 
 (print (funcall #'+ 1 2 3 4 5 6)) ; equivalent to (+ 1 3 4 5 6)
