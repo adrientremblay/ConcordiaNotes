@@ -172,3 +172,16 @@
         ((sortedp lst) lst)
         (t (bubblesort (bubble lst)))))
 (print (bubblesort '(3 2 1)))
+
+; searching
+; determine if element is in list or not
+; sometimes return index
+
+; linear search
+(defun mysearch (lst elt pos)
+    (if (equal (car lst) elt)
+        pos
+        (mysearch (cdr lst) elt (+ 1 pos))))
+(defun lsearch (lst elt)
+    (mysearch lst elt 1))
+(print (lsearch '(4 6 1 5 8 9) 9))
