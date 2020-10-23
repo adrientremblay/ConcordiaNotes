@@ -80,3 +80,9 @@
                 ((member cur set2) rst)
                 (t (cons cur rst)))))))
 (print (diff '(a b c) '(a d e f)))
+
+; function to determine set symmetric difference
+; ?
+(defun setsymetricdiff (set1 set2)
+    (diff (setunion set1 set2) (setintersect set1 set2)))
+(print (setsymetricdiff '(a b c) '(c e)))
