@@ -16,7 +16,6 @@
             nil)))
 
 ; function to find set unions
-; TODO do let on  last part
 (defun setunion (set1 set2)
     (if (null set1) set2 
         (if (null set1) set1 
@@ -51,3 +50,10 @@
 (print (setunion3 '(a b c d) '(a d)))
 (print (setunion4 '(a b c d) '(a d)))
 
+; function to find intersections
+(defun setintersect (set1 set2)
+    (cond 
+        ((null set1) nil)
+        ((member (car set1) set2) (cons (car set1) (setintersect (cdr set1) set2)))
+        (t (setintersect (cdr set1) set2))))
+(print (setintersect '(a b c d) '(a d)))
