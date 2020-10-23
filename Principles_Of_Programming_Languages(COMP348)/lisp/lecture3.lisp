@@ -113,7 +113,7 @@
 ; trees
 ; <atom, <l - list>,<r - list>>
 ; can be technically written in one line
-'(40                   ; root
+(defparameter tree '(40                   ; root
     (30                ; root of left subtre
         (25 () ())
         (35 () ())
@@ -122,7 +122,7 @@
         (50 () ())
         ()
     )
-)
+))
 
 ; accessing parts of the tree
 ; car and cdrs
@@ -178,6 +178,7 @@
 ; sometimes return index
 
 ; linear search
+; doesnt account for null list lmao -> from slides
 (defun mysearch (lst elt pos)
     (if (equal (car lst) elt)
         pos
@@ -185,7 +186,6 @@
 (defun lsearch (lst elt)
     (mysearch lst elt 1))
 (print (lsearch '(4 6 1 5 8 9) 9))
-
 ; linear search (non recursive)
 (defun lsearch2 (lst elt)
     (let ((pos 1))
@@ -195,3 +195,13 @@
             (setq lst (cdr lst))
             (incf pos))))
 (print (lsearch2 '(4 6 1 5 8 9) 9))
+
+; binary search
+; the inpuit is a binary search tree
+(defun binarysearch (tree elt)
+    (cond
+        ((null tree) nil)
+        ((= (car tree) elt) t)
+        ((< elt (car tree)) (binarysearch (car (cdr tree)) elt))
+        (t (binarysearch (car (cdr (cdr tree))) elt))))
+(print (binarysearch tree 60))
