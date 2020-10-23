@@ -112,6 +112,7 @@
 
 ; trees
 ; <atom, <l - list>,<r - list>>
+; can be technically written in one line
 '(40                   ; root
     (30                ; root of left subtre
         (25 () ())
@@ -122,3 +123,19 @@
         ()
     )
 )
+
+; accessing parts of the tree
+; car and cdrs
+; there are built in functions to chain these
+(print (car 
+    '(40                   ; root
+        (30                ; root of left subtre
+            (25 () ())
+            (35 () ())
+        )
+        (60                ; root of right subtree
+            (50 () ())
+            ()
+        )
+    )
+))
