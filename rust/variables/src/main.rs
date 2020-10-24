@@ -18,4 +18,13 @@ fn main() {
     // floats
     let x = 2.0; // f64
     let y: f32 = 4.2; // f32
+
+    // booleans
+    let t = true;
+    let f: bool = false; // meme explicit type annotation
+
+    // chars
+    let c = 'Z';
+    let z = 'z';
+    let heart_eyed_cat = '😻';
 }
