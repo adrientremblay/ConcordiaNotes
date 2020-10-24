@@ -14,4 +14,8 @@ fn main() {
     let x = x + 1;
     let x = x * 2;
     println!("The value of x is: {}", x);
+
+    // floats
+    let x = 2.0; // f64
+    let y: f32 = 4.2; // f32
 }
