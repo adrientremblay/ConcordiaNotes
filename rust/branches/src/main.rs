@@ -14,4 +14,9 @@ fn main() {
     } else {
         println!("number is boring...");
     }
+
+    // if is an expression and can be used for lets
+    let condition: bool = true;
+    let number = if condition { 5 } else { 6 };
+    println!("The value of number is: {}", number);
 }
