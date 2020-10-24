@@ -27,4 +27,17 @@ fn main() {
     let c = 'Z';
     let z = 'z';
     let heart_eyed_cat = '😻';
+
+    // tuple
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup; // decomposition
+    println!("The value of y is: {}", y);
+
+    let one = tup.2; // accessing single element
+    println!("The value of one is: {}", one);
+
+    // arrays
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("the 3rd element of a is: {}", a[2]); // accessing a single element
+    let a = [3; 5]; // 5 3s
 }
