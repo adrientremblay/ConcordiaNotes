@@ -1,7 +1,9 @@
 fn main() {
-    println!("The area of the triangle is {} pixels.", area(5, 12));
+    let rect1 = (5, 12);
+
+    println!("The area of the triangle is {} pixels.", area(rect1));
 }
 
-fn area(width: u32, height: u32) -> u32 {
-    width * height
+fn area(dimensions: (u32, u32)) -> u32 {
+    dimensions.0 * dimensions.1
 }
