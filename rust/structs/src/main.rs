@@ -25,6 +25,8 @@ fn main() {
         username: String::from("anotherusername567"),
         ..user1
     };
+
+    let black = Color(0, 0, 0);
 }
 
 fn build_user(email: String, username: String) -> User {
@@ -42,3 +44,7 @@ struct User {
     sign_in_count: u64,
     active: bool,
 }
+
+// tuple structs
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
