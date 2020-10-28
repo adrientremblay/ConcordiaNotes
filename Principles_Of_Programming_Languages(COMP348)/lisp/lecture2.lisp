@@ -1,27 +1,27 @@
-; local variable
-(defparameter *pi* 3.14)
-(print *pi*)
-(defparameter *pi* 3.1415926535)
-(print *pi*)
+;; ; local variable
+;; (defparameter *pi* 3.14)
+;; (print *pi*)
+;; (defparameter *pi* 3.1415926535)
+;; (print *pi*)
 
-; constant
-(defconstant limit 100)
-(print limit)
+;; ; constant
+;; (defconstant limit 100)
+;; (print limit)
 
-; checks if symbol is in use or not
-(print (boundp 'limit)) 
-(print (boundp 'meme))
+;; ; checks if symbol is in use or not
+;; (print (boundp 'limit)) 
+;; (print (boundp 'meme))
 
-; global variable
-(setq place 'canada)
-(print place)
-(setq place 'montreal) ; change value of global value
-(print place)
+;; ; global variable
+;; (setf place 'canada)
+;; (print place)
+;; (setf place 'montreal) ; change value of global value
+;; (print place)
 
 ; eql vs equal
 (setf X '(A B C D E))
 (setf Y '(A B C D E))
-(setf Z X)
+(setf Z *)
 (print (eql x y))
 (print (equal x y))
 (print (eql x z))

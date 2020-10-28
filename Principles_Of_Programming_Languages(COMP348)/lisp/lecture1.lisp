@@ -14,7 +14,7 @@
 (print (list 1 '(2 3) (+ 2 3)))
 (print (list 1 '(2 3) (list (+ 2 3) 'b 'c)))
 
-(print 'append) ; combines all elements of given lists into a list
+(print 'append) ; combines all elements of given lists into ONE SINGLE list
 (print (append '(1 2) '(3 4)))
 (print (append '(1 2 3) '() '(a) '(5 6)))
 (print (append '(1 2 3 '(a b c)) '() '(d) '(4 5)))
@@ -29,14 +29,12 @@
 (print (cdr '((a s) d f)))
 (print (car(cdr '(1 (3 5) (7 11)))))
 
-(print 'expressions)
-; (function-name arguments)
+(print 'expressions) ; (function-name arguments)
 (print (- 14 (* 2 3))) ; 14 - 2 * 3
 (print (+ 1 2 3 4)) ; 1 + 2 + 3 + 4
 (print (< 1 3 2)) ; 1 < 3 and 3 < 1
-; prohibiting expression evaluation
 (print (/ (* 2 6) 3)) ; returns 4
-(print '(/ (* 2 6) 3)) ; returns (/ (* 2 6) 3)
+(print '(/ (* 2 6) 3)) ; returns (/ (* 2 6) 3)  -> prohibiting expression evaluation
 
 (print 'boolean_operators)
 ; and or not
@@ -45,7 +43,7 @@
 (print (or (< x 2) (> x 3)))) ; or will short circuit if it can
 
 (print 'Preticate_Functions)
-(print (listp '(a b c)))
+(print (listp '(a b c))) ; checks if is a list
 (print (listp 7))
 
 (print 'Control_Flow)
@@ -59,7 +57,7 @@
 (print (let ((x 1))
             (let ((x (+ x 1)))
                  (+ x x))))
-(print (let* ((x 10)
+(print (let* ((x 10) ; sequantial binding let*
               (y (* 2 x)))
               (* x y)))
 
@@ -123,10 +121,11 @@
     (cons (car lst) (consr (cdr lst) e))))
 (print (consr `(a b c d) `e))
 (defun product (list1 list2) ; also uses recursion
-  (if (or (null list1) (null list2))
-    nil
-  (let ((x (* (car list1) (car list2))))
-    (cons x (product (cdr list1) (cdr list2))))))
+  (if 
+    (or (null list1) (null list2))
+      nil
+    (let ((x (* (car list1) (car list2))))
+      (cons x (product (cdr list1) (cdr list2))))))
 (print (product '(1 2 3) '(4 5 6)))
 (print (product '(1 2 3) '(4 5 6 1))) ; the extra var is ignored
 
