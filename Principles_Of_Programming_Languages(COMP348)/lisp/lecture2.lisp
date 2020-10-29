@@ -22,8 +22,8 @@
 (defparameter X '(A B C D E))
 (defparameter Y '(A B C D E))
 (defparameter Z *)
-(print (eql x y))
-(print (equal x y))
+(print (eql x y)) ; exact same variable reference
+(print (equal x y)) ; same value
 (print (eql x z))
 (print (equal x z))
 
@@ -31,9 +31,10 @@
 (copy-list x)
 
 ; my own implementation of copy-list
-(defun copy-list2 (lst) (if (atom lst) 
-  lst
-  (cons (car lst) (copy-list2 (cdr lst))))) 
+(defun copy-list2 (lst) 
+  (if (atom lst) 
+    lst
+    (cons (car lst) (copy-list2 (cdr lst))))) 
 (print (copy-list2 '(a b c)))
 
 ; can use setf to modify inner structures
@@ -44,7 +45,8 @@
 (print x)
 
 ; loops
-(print (loop (print "Inside a loop.")
+(print (loop 
+  (print "Inside a loop.")
   (return 7))) ; return will exit the loop and the value becomes the values of the loop form
 
 (let ((n 0))
@@ -55,7 +57,9 @@
 
 ; dotimes -> simple for loop
 ; (dotimes (<counter> <limit> <result>) <body>)
-(print (dotimes (n 3 "result") (print n) (write (* n n n))))
+(print (dotimes (n 3 "result") 
+  (print n) 
+  (write (* n n n))))
 
 (print (let (value) ; accumulator
   (dotimes (number 3 value)
@@ -83,14 +87,17 @@
 
 ; recursive lecture fun
 (defun bsequence (n)
-  (if (= n 0) '(0) (cons n (bsequence (- n 1)))))
+  (if (= n 0) 
+    '(0) 
+    (cons n (bsequence (- n 1)))))
 (print (bsequence 10))
 
 ; ackermann function
 (defun ackermann (m n) 
-  (cond ((zerop m) (+ n 1))
-  ((zerop n) (ackermann (- m 1) 1))
-  (t (ackermann (- m 1) (ackermann m (- n 1))))))
+  (cond 
+    ((zerop m) (+ n 1))
+    ((zerop n) (ackermann (- m 1) 1))
+    (t (ackermann (- m 1) (ackermann m (- n 1))))))
 (print (ackermann 3 4))
 
 ; our own version of append
@@ -117,30 +124,32 @@
 ; our own version of reverse
 (defun reverse2 (lst)
   (if (null lst)
-  '()
-  (append (reverse2 (cdr lst)) (list (car lst)))))
+    '()
+    (append (reverse2 (cdr lst)) (list (car lst)))))
 (print (reverse2 '(a b c d e)))
 
 ; cube list function
 (defun cube-list (lst)
   (if (null lst) 
-  nil
-  (let ((elt (car lst)))
-  (cons (* elt elt elt) (cube-list (cdr lst))))))
+    nil
+    (let ((elt (car lst)))
+      (cons (* elt elt elt) (cube-list (cdr lst))))))
 (print (cube-list '(1 2 3)))
 
 ; interleave function
 (defun interleave (lst1 lst2)
-  (cond ((null lst1) lst2)
-  ((null lst2) lst1)
-  (t (cons (car lst1) (cons (car lst2) (interleave (cdr lst1) (cdr lst2)))))))
+  (cond 
+    ((null lst1) lst2)
+    ((null lst2) lst1)
+    (t (cons (car lst1) (cons (car lst2) (interleave (cdr lst1) (cdr lst2)))))))
 (print (interleave '(a b c) '(d e f g h)))
 
 ; remove-first-occurence function
 (defun remove-first-occurence (item lst)
-  (cond ((eql (car lst) item) (cdr lst))
-  ((null lst) nil)
-  (t (cons (car lst) (remove-first-occurence item (cdr lst))))))
+  (cond 
+    ((eql (car lst) item) (cdr lst))
+    ((null lst) nil)
+    (t (cons (car lst) (remove-first-occurence item (cdr lst))))))
 (print (remove-first-occurence 'v '(a b c v d e v v v)))
 (print (remove-first-occurence 'v '(a b c  d e)))
 
@@ -154,18 +163,19 @@
 
 ; merge function (merge sort)
 (defun merge2 (lst1 lst2)
-  (cond ((null lst1) lst2)
-  ((null lst2) lst1)
-  ((= (car lst1) (car lst2)) (merge2 (cdr lst1) lst2))
-  ((< (car lst1) (car lst2)) (cons (car lst1) (merge2 (cdr lst1) lst2)))
-  (t (cons (car lst2) (merge2 lst1 (cdr lst2))))))
+  (cond 
+    ((null lst1) lst2)
+    ((null lst2) lst1)
+    ((= (car lst1) (car lst2)) (merge2 (cdr lst1) lst2))
+    ((< (car lst1) (car lst2)) (cons (car lst1) (merge2 (cdr lst1) lst2)))
+    (t (cons (car lst2) (merge2 lst1 (cdr lst2))))))
 (print (merge2 '(3 4 6 8) '(3 4 5 6)))
 
 ; max function
 (defun max2 (lst)
-  (cond ((null (car lst)) nil)
-  ((null (cdr lst)) (car lst))
-  (t (let ((a (car lst)) 
-    (b (max2 (cdr lst))))
-    (if (> a b) a b)))))
+  (cond 
+    ((null (car lst)) nil)
+    ((null (cdr lst)) (car lst))
+    (t (let ((a (car lst)) (b (max2 (cdr lst))))
+      (if (> a b) a b)))))
 (print (max2 '(1 5 7 4 8 20 4 6 4)))

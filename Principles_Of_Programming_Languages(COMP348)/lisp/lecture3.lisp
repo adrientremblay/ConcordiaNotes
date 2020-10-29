@@ -60,12 +60,11 @@
 (defun setintersect2 (set1 set2)
     (if (null set1) 
         nil
-        (let (
-            (cur (car set1))
-            (rst (setintersect2 (cdr set1) set2)))
-        (if (member cur set2) 
-            (cons cur rst)
-            rst))))
+        (let 
+            ((cur (car set1)) (rst (setintersect2 (cdr set1) set2)))
+            (if (member cur set2) 
+                (cons cur rst)
+                rst))))
 (print (setintersect '(a b c d) '(a d)))
 (print (setintersect2 '(a b c d) '(a d)))
 
