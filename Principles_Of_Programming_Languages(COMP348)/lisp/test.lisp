@@ -7,9 +7,9 @@
 
 ; comment after line
 
-#||
-Multiline
-||#
+;; #||
+;; Multiline
+;; ||#
 
 
 ; (format t "Hello world ~%")
@@ -33,3 +33,7 @@ Multiline
 ;; (format t "Number with commas ~:d" 10000000)
 
 ;; (print "penis")
+
+(cond
+    ((= 1 1 ) (print "hello"))
+    ((= 2 2) (print "hello2")))
