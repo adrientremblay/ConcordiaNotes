@@ -34,6 +34,11 @@
 
 ;; (print "penis")
 
-(cond
-    ((= 1 1 ) (print "hello"))
-    ((= 2 2) (print "hello2")))
+;; (cond
+;;     ((= 1 1 ) (print "hello"))
+;;     ((= 2 2) (print "hello2")))
+
+(defvar sym 'hello)
+(defvar num 20)
+(defvar str "Hello world")
+(defvar lst '(hello 20 "hello world"))

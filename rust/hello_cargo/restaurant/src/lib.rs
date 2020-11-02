@@ -1,6 +1,8 @@
 mod front_of_house {
     pub mod hosting {
-        pub fn add_to_waitlist() {}
+        pub fn add_to_waitlist() {
+            println!("meme");
+        }
 
         fn seat_at_table() {}
     }
@@ -14,8 +16,10 @@ mod front_of_house {
     }
 }
 
-use crate::front_of_house::hosting;
+pub use crate::front_of_house::hosting;
 
 pub fn eat_at_restaurant() {
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
     hosting::add_to_waitlist();
 }
