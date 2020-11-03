@@ -35,4 +35,23 @@ fn main() {
     }
 
     println!("Mode: {}", maxval);
+
+    let mut strings = [
+        String::from("Hello"),
+        String::from("Ass"),
+        String::from("Hay"),
+        String::from("Apple"),
+    ];
+
+    for (i, string) in strings.iter_mut().enumerate() {
+        let first_char = string.to_lowercase().chars().next().unwrap();
+        match first_char {
+            'a' | 'e' | 'i' | 'o' | 'u' => *string = format!("{}-hay", string),
+            _ => {
+                *string = format!("{}-{}ay", string, first_char);
+                string.remove(0);
+            }
+        }
+        println!("{}", string);
+    }
 }
