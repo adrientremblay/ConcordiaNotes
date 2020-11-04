@@ -7,6 +7,7 @@
 
 int main()
 {
+    printf("Love you baby!");
 
     return 0;
 }
