@@ -3,11 +3,24 @@
 // simple or composite/aggregate datatypes
 // composite datatypes can have subparts -> structs
 
+// preprocessors
 #include <stdio.h>
 
+// headers
+int factorial(int n);
+
+// main function
 int main()
 {
-    printf("Love you baby!");
+    printf("%d", factorial(5));
 
     return 0;
+}
+
+int factorial(int n)
+{
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
 }

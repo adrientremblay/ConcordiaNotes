@@ -4,8 +4,8 @@ int main()
 {
     // pointers
     int x = 5;
-    printf("%d\n", x);
-    printf("%d\n", &x);
+    printf("x is %d\n", x);
+    printf("reference of x is %d\n", &x);
     printf("%d\n", *&x);
     return 0;
 }
