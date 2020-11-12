@@ -7,17 +7,29 @@
 #include <stdio.h>
 
 // headers
-int factorial(int n);
+long factorial(int n);
 
 // main function
 int main()
 {
-    printf("%d", factorial(5));
+    int n;
+    long f;
+    printf("Enter a non-negative integer:");
+    scanf("%d", &n);
+
+    if (n < 0)
+    {
+        printf("Number cannot be less than zero!\n");
+        return 0;
+    }
+
+    f = factorial(n);
+    printf("%ld\n", f);
 
     return 0;
 }
 
-int factorial(int n)
+long factorial(int n)
 {
     if (n == 0)
         return 1;
