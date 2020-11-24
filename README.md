@@ -1,13 +1,11 @@
 # SOEN-Notes
-A collection of notes written in R markdown for classes I took during my Software Engineering degree at Concordia University as well as subjects learned independantly.
-
-Also includes implementations of data structures and other misc code snippets.
+A collection of notes, and code regarding different subjects I'm learning in my spare time
 
 ## Topics
 
 * Data Structures
-* Engineering Ecenomics (ENGR301)
-* Technological Ethics (ENGR392)
+* Studying Technique
+* The Rust Programming language
 
 ## Planned Topics
 
